@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveyStyle.css">
+    <title>Feedback</title>
+</head>
+<body>
+<div class="header">
+    <h1 id="title">Course Survey Form</h1>
+    <p id="description"><i>Please take your few minutes to help us improve the course.</i></p>
+
+</div>
+
+<form id="Survey-form">
+    <div class="crux">
+        <label class="required" for="name" id="label-name">Name</label>
+        <input type="text" name="" id="name" placeholder="Enter your name">
+    </div>
+    <div class="crux">
+        <label class="required" for="email" id="label-email">Email</label>
+        <input type="text" name="" id="email" placeholder="Enter your email">
+    </div>
+    <div class="crux">
+        <label for="mobile-no" id="label-number">Contact Number</label>
+        <input type="text" name="" id="number" placeholder="Enter your number">
+    </div>
+
+    <div class="crux">
+        <label class="required" for="working" id="label-choice">Are you a?</label>
+        <select name="working" id="career-choice">
+            <option value="Working Professional">Working Professional</option>
+            <option value="Passed out">Student (Passed out)</option>
+            <option value="Appearing">Student (Appearing)</option>
+        </select>
+       
+        
+    </div>
+
+    <div class="crux">
+        <label>What, in your opinion are the best features of the course?</label>
+
+       <label for="improve1"><input type="checkbox" name="improve" id="improve1">Teaching</label>
+       <label for="improve2"><input type="checkbox" name="improve" id="improve2">Content</label>
+       <label for="improve3"><input type="checkbox" name="improve" id="improve3">Projects</label>
+       <label for="improve4"><input type="checkbox" name="improve" id="improve4">Doubt Resolution</label>
+       <label for="improve5"><input type="checkbox" name="improve" id="improve5">Placement Opportunities</label>
+    </div>
+
+    <div class="crux">
+        <label>Would you recommend our course to a friend?</label>
+
+        <label for="recommend1"><input type="radio" name="recommend">Definately</label>
+        <label for="recommend2"><input type="radio" name="recommend">Maybe</label>
+        <label for="recommend3"><input type="radio" name="recommend">No</label>
+
+    </div>
+
+    <div class="crux">
+        <label for="suggestions">Any comments/suggestions?</label>
+        <textarea name="suggestions" id="suggestions" placeholder="Type here.."></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+    
+</form>
+</body>
+</html>
